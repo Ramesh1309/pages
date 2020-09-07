@@ -12,7 +12,7 @@ public class HomeController {
 
     @GetMapping
     public String getPage(){
-        return "Hello from page : YellowPages";
+        return "Hello from page : Delta-4";
     }
 
 
