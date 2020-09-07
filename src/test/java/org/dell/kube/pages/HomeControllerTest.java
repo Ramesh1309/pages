@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class HomeControllerTest {
-    private final String message = "Delta-4";
+    private final String message = "YellowPages";
 
     @Test
     public void itSaysYellowPagesHello() throws Exception {
