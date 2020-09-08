@@ -17,7 +17,13 @@ spec:
         app: pages
     spec:
       containers:
-      - image: ramesh1309/pages:1.0
+      - image: ramesh1309/pages:delta
         name: pages
         ports:
           - containerPort: 8080
+        env:
+           - name: PAGE_CONTENT
+             valueFrom:
+               configMapKeyRef:
+                 name: pages-config-map
+                 key: PAGE_CONTENT
