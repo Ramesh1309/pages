@@ -17,7 +17,7 @@ spec:
         app: pages
     spec:
       containers:
-      - image: ramesh1309/pages:delta
+      - image: ramesh1309/pages:pipeline
         name: pages
         ports:
           - containerPort: 8080
