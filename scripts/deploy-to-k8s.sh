@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 set -ex
 
-kubectl delete deployment/pages
 
 kubectl apply -f deployment/pages-namespace.yaml
 kubectl apply -f deployment/pages-config.yaml
