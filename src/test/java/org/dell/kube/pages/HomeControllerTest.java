@@ -9,7 +9,7 @@ public class HomeControllerTest {
 
     @Test
     public void itSaysYellowPagesHello() throws Exception {
-        HomeController controller = new HomeController();
+        HomeController controller = new HomeController(message);
 
         assertThat(controller.getPage()).contains(message);
     }

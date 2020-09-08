@@ -20,7 +20,11 @@ public class HomeController {
     public HomeController(@Value("${page.content}") String pageContent){
         this.pageContent=pageContent;
     }
+/*
+    public HomeController() {
 
+    }
+*/
     @GetMapping
     public String getPage(){
         return "Hello from page : "+pageContent+" ";
