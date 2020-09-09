@@ -19,6 +19,11 @@ public class HomeApiTest {
     protected Object clone() throws CloneNotSupportedException {
         return super.clone();
     }
+    @Test
+    public void healthTest(){
+        String body = this.restTemplate.getForObject("/actuator/health", String.class);
+        assertThat(body).contains("UP");
+    }
 
     @Test
     public void readTest() {
