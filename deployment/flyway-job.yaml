@@ -4,7 +4,7 @@ metadata:
   name: flyway-job
   namespace: delta
   labels:
-    app: pages
+    app: pages  
 spec:
   template:
     spec:
@@ -15,6 +15,13 @@ spec:
             - info
             - migrate
             - info
+          resources:
+            requests:
+              memory: 500Mi
+              cpu: 0.25
+            limits:
+              memory: 900Mi
+              cpu: 1
           env:
             - name: FLYWAY_URL
               value: jdbc:mysql://pages-mysql/pages
